@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---->
+    <link href="assets/style.css" rel="stylesheet">
+    <!---->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Weather</title>
+</head>
+
+<body>
+    <!--Header-->
+    <div class="jumbotron" style="margin-bottom:20px;">
+        <h1 class="text-center text-success"> Today's Weather</h1>
+    </div>
+    <!---->
+    <div class="row form-group form-inline" id="rowDiv">
+        <input type="text" name="city" id="city" class="form-control" placeholder="City Name">
+        <button id="submitWeather" class="btn btn-success"> Search</button>
+    </div>
+    <div id="city"></div>
+    <!---->
+    <div id="show"></div>
+    <ul class="list-group history"></ul>
+
+    <!--Current Weather-->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <div id="today" class="mt-3"></div>
+                <div id="forecast" class="mt-3"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--Current Weather-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+
+</html>
